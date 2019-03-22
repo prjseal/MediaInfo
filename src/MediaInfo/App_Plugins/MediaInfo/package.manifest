@@ -4,10 +4,10 @@
       "name": "MediaInfo",
       "alias": "mediaInfo",
       "weight": 1,
-      "icon": "icon-info",
+      "icon": "icon-list",
       "view": "~/App_Plugins/MediaInfo/index.html",
       "show": [
-        "+content/*"
+        "+media/*"
       ]
     }
   ],
