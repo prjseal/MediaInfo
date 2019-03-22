@@ -1,0 +1,20 @@
+﻿{
+  "contentApps": [
+    {
+      "name": "MediaInfo",
+      "alias": "mediaInfo",
+      "weight": 1,
+      "icon": "icon-info",
+      "view": "~/App_Plugins/MediaInfo/index.html",
+      "show": [
+        "+content/*"
+      ]
+    }
+  ],
+    "javascript": [
+        "~/App_Plugins/MediaInfo/js/main.controller.js"
+    ],
+    "css": [
+        "~/App_Plugins/MediaInfo/css/style.css"
+    ]
+}

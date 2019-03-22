@@ -11,3 +11,6 @@
 /src/MediaInfo.Web/obj/Debug
 /src/MediaInfo.Web/Umbraco
 /src/packages
+/src/MediaInfo/bin/Debug
+/src/MediaInfo/obj/Debug
+/src/MediaInfo.Web/App_Plugins/MediaInfo
