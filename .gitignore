@@ -3,3 +3,11 @@
 ################################################################################
 
 /src/.vs
+/src/MediaInfo.Web/App_Data/cache
+/src/MediaInfo.Web/App_Data/Logs
+/src/MediaInfo.Web/App_Data/TEMP
+/src/MediaInfo.Web/bin
+/src/MediaInfo.Web/App_Plugins/ModelsBuilder
+/src/MediaInfo.Web/obj/Debug
+/src/MediaInfo.Web/Umbraco
+/src/packages

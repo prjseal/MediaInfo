@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaInfo.Web", "MediaInfo.Web\MediaInfo.Web.csproj", "{48F6B6F2-E579-4124-859C-0DD2047E7896}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48F6B6F2-E579-4124-859C-0DD2047E7896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48F6B6F2-E579-4124-859C-0DD2047E7896}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48F6B6F2-E579-4124-859C-0DD2047E7896}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48F6B6F2-E579-4124-859C-0DD2047E7896}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30FA6D02-7AC9-45CA-91A6-F0023EE0AED7}
+	EndGlobalSection
+EndGlobal
