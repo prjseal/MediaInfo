@@ -417,6 +417,9 @@
     <Content Include="config\logviewer.searches.config.js" />
     <Content Include="Global.asax" />
     <Content Include="Media\3svn5554\win_20190322_20_47_24_pro.jpg" />
+    <Content Include="Media\b1hjyxza\img_1231.jpg" />
+    <Content Include="Media\Web.config" />
+    <Content Include="Media\yvmpv5vz\img_0863.jpg" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -427,7 +430,6 @@
     <Content Include="config\imageprocessor\processing.config" />
     <Content Include="config\imageprocessor\cache.config" />
     <Content Include="App_Plugins\ModelsBuilder\package.manifest" />
-    <Content Include="Media\Web.config" />
     <Content Include="config\umbracoSettings.config" />
     <Content Include="config\tinyMceConfig.config" />
     <Content Include="config\serilog.user.config" />

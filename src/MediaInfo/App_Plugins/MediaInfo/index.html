@@ -5,6 +5,21 @@
         </div>
     </div>
     <div id="mediainfo" class="mediainfo__container">
-        <textarea rows="20" ng-model="text"></textarea>
+        <p><a href="{{mapUrl}}" target="_blank">View Map</a></p>
+        <ul>
+            <li ng-repeat="item in data">
+                {{item.Name}}
+                <ul>
+                    <li ng-repeat="dataItem in item.Tags">
+                        <div ng-if="dataItem.Name === 'GPS Latitude' || dataItem.Name === 'GPS Longitude'">
+                            {{dataItem.Name}}: {{dataItem.Description}}
+                        </div>
+                        <div ng-if="dataItem.Name !== 'GPS Latitude' && dataItem.Name !== 'GPS Longitude'">
+                            {{dataItem.Name}}: {{dataItem.Description}}
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
 </div>

@@ -12,7 +12,8 @@
     }
   ],
     "javascript": [
-        "~/App_Plugins/MediaInfo/js/main.controller.js"
+        "~/App_Plugins/MediaInfo/js/main.controller.js",
+        "~/App_Plugins/MediaInfo/js/geopoint.js"
     ],
     "css": [
         "~/App_Plugins/MediaInfo/css/style.css"
