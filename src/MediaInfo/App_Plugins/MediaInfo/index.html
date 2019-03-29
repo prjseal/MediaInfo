@@ -5,21 +5,44 @@
         </div>
     </div>
     <div id="mediainfo" class="mediainfo__container">
-        <p><a href="{{mapUrl}}" target="_blank">View Map</a></p>
-        <ul>
-            <li ng-repeat="item in data">
-                {{item.Name}}
-                <ul>
-                    <li ng-repeat="dataItem in item.Tags">
-                        <div ng-if="dataItem.Name === 'GPS Latitude' || dataItem.Name === 'GPS Longitude'">
-                            {{dataItem.Name}}: {{dataItem.Description}}
+        <div class="form-horizontal ng-scope">
+            <!--repeat this element-->
+            <div ng-repeat="item in data" class="umb-expansion-panel__content">
+                <div class="umb-property ng-scope ng-isolate-scope">
+                    <div class="control-group umb-control-group">
+                        <div class="umb-el-wrap">
+                            <label class="control-label ng-binding">
+                                {{item.Name}}
+                            </label>
+                            
+                            <div ng-if="item.Name === 'GPS' && mapUrl" class="controls">
+                                <ul class="nav nav-stacked ng-scope">
+                                    <li>
+                                        <a href="{{mapUrl}}" target="_blank">
+                                            <i class="icon icon-map-loaction"></i>
+                                            <span class="ng-binding">View map</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>                                
+
+                            <div ng-repeat="dataItem in item.Tags">
+                                <div ng-if="dataItem.Name.substring(0,7) != 'Unknown'" class="controls">
+                                    <div class="umb-property-editor db ng-scope ng-isolate-scope">
+                                        <div disable-tabindex="preview" class="ng-isolate-scope">
+                                            <div class="ng-scope">
+                                                <div class="umb-property-editor umb-readonlyvalue ng-scope">
+                                                    <span class="ng-binding">{{dataItem.Name}}: {{dataItem.Description}}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div ng-if="dataItem.Name !== 'GPS Latitude' && dataItem.Name !== 'GPS Longitude'">
-                            {{dataItem.Name}}: {{dataItem.Description}}
-                        </div>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

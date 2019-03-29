@@ -1,0 +1,7 @@
+version: 1.0.{build}
+before_build:
+  ps: nuget restore src/MediaInfo.Web.sln
+build:
+  project: src/MediaInfo/MediaInfo.csproj
+  publish_nuget: true
+  verbosity: detailed

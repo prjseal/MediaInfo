@@ -252,7 +252,6 @@
   <ItemGroup>
     <Content Include="App_Plugins\MediaInfo\css\style.css" />
     <Content Include="App_Plugins\MediaInfo\index.html" />
-    <Content Include="App_Plugins\MediaInfo\js\geopoint.js" />
     <Content Include="App_Plugins\MediaInfo\js\main.controller.js" />
   </ItemGroup>
   <ItemGroup />

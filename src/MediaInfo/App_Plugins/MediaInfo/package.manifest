@@ -1,10 +1,10 @@
 ﻿{
   "contentApps": [
     {
-      "name": "MediaInfo",
+      "name": "Media Info",
       "alias": "mediaInfo",
       "weight": 1,
-      "icon": "icon-list",
+      "icon": "icon-fingerprint",
       "view": "~/App_Plugins/MediaInfo/index.html",
       "show": [
         "+media/*"

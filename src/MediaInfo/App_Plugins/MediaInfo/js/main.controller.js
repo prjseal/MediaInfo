@@ -23,37 +23,30 @@
                 $scope.data = response.data;
 
                 var latDegrees = '';
+                var latRef = '';
                 var lngDegrees = '';
+                var lngRef = '';
 
                 response.data.forEach(function (dir) {
                     if (dir.Name === 'GPS') {
                         dir.Tags.forEach(function (tag) {
                             if (tag.Name === 'GPS Latitude') {
-                                latDegrees = tag.Description;
+                                latDegrees = tag.Description.replace(/ /g, '');
                             } else if (tag.Name === 'GPS Longitude') {
-                                lngDegrees = tag.Description;
+                                lngDegrees = tag.Description.replace(/ /g, '');
+                            } else if (tag.Name === 'GPS Latitude Ref') {
+                                latRef = tag.Description;
+                            } else if (tag.Name === 'GPS Longitude Ref') {
+                                lngRef = tag.Description;
                             }
                         });
                     }
                 });
 
-                $scope.point = new GeoPoint(lngDegrees, latDegrees);
-                var mapUrl = 'https://www.bing.com/maps/embed?h=280&w=325&cp=' + $scope.point.getLatDec() + '~' + $scope.point.getLonDec() + '&lvl=11&typ=s&sty=r&src=SHELL&FORM=MBEDV8';
-                console.log(mapUrl);
-                $scope.mapUrl = mapUrl;
-
-
-
-                //var text = '';
-                //response.data.forEach(function (dir) {
-                //    text += dir.Name + '\n';
-                //    dir.Tags.forEach(function (tag) {
-                //        text += tag.Name + ": " + tag.Description + '\n';
-                //    });
-                //    text += '\n';
-                //});
-                //$scope.data = response.data;
-                //console.log(text);
+                if (latDegrees != '' && lngDegrees != '' && latRef != '' && lngRef != '') {
+                    var mapUrl = 'https://www.google.com/maps/place/' + latDegrees + latRef + '+' + lngDegrees + lngRef;
+                    $scope.mapUrl = mapUrl;
+                }
             });
         };
 
