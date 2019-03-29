@@ -7,13 +7,12 @@
       "icon": "icon-fingerprint",
       "view": "~/App_Plugins/MediaInfo/index.html",
       "show": [
-        "+media/*"
+        "+media/Image"
       ]
     }
   ],
     "javascript": [
-        "~/App_Plugins/MediaInfo/js/main.controller.js",
-        "~/App_Plugins/MediaInfo/js/geopoint.js"
+        "~/App_Plugins/MediaInfo/js/main.controller.js"
     ],
     "css": [
         "~/App_Plugins/MediaInfo/css/style.css"

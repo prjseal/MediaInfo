@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>MediaInfo</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>Media Info Content App</title>
     <authors>Paul Seal</authors>
     <owners>Paul Seal</owners>
@@ -12,7 +12,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A Content App for Umbraco which lets you see the meta data of your file such as GPS and Camera details.</description>
     <releaseNotes>
-      - First release
+      - Updated content app permissions and removed geopoint
     </releaseNotes>
     <copyright>$copyright$</copyright>
     <tags>Umbraco Content App GPS camera picture photo metadata v8 package library</tags>

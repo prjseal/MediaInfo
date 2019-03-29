@@ -14,7 +14,6 @@
                             <label class="control-label ng-binding">
                                 {{item.Name}}
                             </label>
-                            
                             <div ng-if="item.Name === 'GPS' && mapUrl" class="controls">
                                 <ul class="nav nav-stacked ng-scope">
                                     <li>
@@ -25,7 +24,6 @@
                                     </li>
                                 </ul>
                             </div>                                
-
                             <div ng-repeat="dataItem in item.Tags">
                                 <div ng-if="dataItem.Name.substring(0,7) != 'Unknown'" class="controls">
                                     <div class="umb-property-editor db ng-scope ng-isolate-scope">

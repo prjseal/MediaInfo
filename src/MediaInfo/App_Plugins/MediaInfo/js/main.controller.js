@@ -19,7 +19,6 @@
                     'Content-Type': 'application/json'
                 }
             }).then(function (response) {
-                console.log(response.data);
                 $scope.data = response.data;
 
                 var latDegrees = '';
