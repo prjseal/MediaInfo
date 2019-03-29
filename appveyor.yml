@@ -1,7 +1,7 @@
 version: 1.0.{build}
 image: Visual Studio 2017
 before_build:
-  ps: nuget restore src/MediaInfo.Web.sln
+  ps: nuget restore src/MediaInfo.sln
 build:
   project: src/MediaInfo/MediaInfo.csproj
   publish_nuget: true
