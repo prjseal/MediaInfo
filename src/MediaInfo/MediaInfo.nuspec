@@ -10,7 +10,7 @@
     <projectUrl>https://github.com/prjseal/MediaInfo</projectUrl>
     <iconUrl>https://github.com/prjseal/MediaInfo/blob/master/images/logo.jpg?raw=true</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>An OCR Content App for Umbraco which lets you see the meta data of your file such as GPS and Camera details.</description>
+    <description>A Content App for Umbraco which lets you see the meta data of your file such as GPS and Camera details.</description>
     <releaseNotes>
       - First release
     </releaseNotes>
