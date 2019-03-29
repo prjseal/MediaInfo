@@ -6,12 +6,12 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("MediaInfo")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A content app for umbraco which shows the File Info for your media items such as the GPS and Camera details")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Paul Seal from codeshare.co.uk")]
 [assembly: AssemblyProduct("MediaInfo")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("Paul Seal from codeshare.co.uk")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
